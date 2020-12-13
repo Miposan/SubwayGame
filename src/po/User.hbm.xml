@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="po.User" table="user" catalog="subway">
+        <id name="username" type="java.lang.String">
+            <column name="username" length="20" unique="true"/>
+            <generator class="assigned"/>
+        </id>
+        <property name="password" type="java.lang.String">
+            <column name="password" length="20"/>
+        </property>
+        <property name="score" type="java.lang.Integer">
+            <column name="score" />
+        </property>
+    </class>
+</hibernate-mapping>
