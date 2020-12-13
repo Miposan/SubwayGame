@@ -7,7 +7,7 @@ import service.IUserService;
 
 public class UserAction {
     private User loginUser;
-//    private
+    private IUserService userService=null;
     public void setLoginUser(User loginUser) {
         this.loginUser = loginUser;
     }
@@ -15,11 +15,13 @@ public class UserAction {
     public User getLoginUser() {
         return loginUser;
     }
+
+    public void setUserService(IUserService userService)
+    {
+        this.userService = userService;
+    }
+
     public String login() {
-        //创建 Spring 容器
-        ApplicationContext ctx = new ClassPathXmlApplicationContext("WEB-INF/applicationContext.xml");
-        //获取 UserService 实例
-        IUserService userService = (IUserService) ctx.getBean("userService");
         if (userService.login(loginUser)) {
             return "loginSuccess";
         }

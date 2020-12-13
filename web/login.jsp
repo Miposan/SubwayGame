@@ -5,7 +5,7 @@
 </head>
 <body>
     <form action="login" method="post">
-    请输入用户名：<input name="loginUser.account" type="text"><br>
+    请输入用户名：<input name="loginUser.username" type="text"><br>
     请输入密码：<input name="loginUser.password" type="password">
     <input type="submit" value="登录">
     </form>
