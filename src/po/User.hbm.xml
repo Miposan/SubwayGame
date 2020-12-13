@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="po.User" table="user" catalog="subwaygame_schema">
+        <id name="userID" type="java.lang.Integer">
+            <column name="userID"/>
+            <generator class="increment" />
+        </id>
+        <property name="username" type="java.lang.String">
+            <column name="username" length="20" unique="true"/>
+        </property>
+        <property name="password" type="java.lang.String">
+            <column name="password" length="20"/>
+        </property>
+        <property name="credit" type="java.lang.Integer">
+            <column name="credit" />
+        </property>
+    </class>
+</hibernate-mapping>
