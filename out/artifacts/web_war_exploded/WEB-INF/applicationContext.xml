@@ -8,7 +8,8 @@ http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
     <!--配置数据源的bean-->
     <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
         <property name="driverClassName" value="com.mysql.cj.jdbc.Driver"/>
-        <property name="url" value="jdbc:mysql://192.168.123.155/subwaygame_schema?serverTimezone=UTC"/>
+        <!--<property name="url" value="jdbc:mysql://192.168.123.155/subwaygame_schema?serverTimezone=UTC"/>-->
+        <property name="url" value="jdbc:mysql://u361372d67.wicp.vip:45665/subwaygame_schema?serverTimezone=UTC"/>
         <property name="username" value="root"/>
         <property name="password" value="ghz1020801699"/>
     </bean>

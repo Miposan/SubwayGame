@@ -14,7 +14,7 @@
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://192.168.123.155:3306</jdbc-url>
+      <jdbc-url>jdbc:mysql://u361372d67.wicp.vip:45665</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
       <driver-properties>
         <property name="serverTimezone" value="Hongkong" />
